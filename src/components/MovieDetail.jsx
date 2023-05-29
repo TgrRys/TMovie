@@ -15,20 +15,20 @@ const MovieDetails = ({ current }) => {
           <div className="details-info">
             <h1 className="details-title">{current.title}</h1>
             <div className="details-about">
-              <h3 className="fontHead">ABOUT:</h3>
+              <h3 className="fontHead">ABOUT: </h3>
               <p>{current.overview}</p>
             </div>
             <div className="rating">
               <div className="details-about">
-                <h3 className="fontHead">IMDB Rating:</h3>
+                <h3 className="fontHead">IMDB Rating: </h3>
                 <p>{current.vote_average}/10</p>
               </div>
               <div className="details-about">
-                <h3 className="fontHead">Release Date:</h3>
+                <h3 className="fontHead">Release Date: </h3>
                 <p>{current.release_date}</p>
               </div>
               <div className="details-about">
-                <h3 className="fontHead">Popularity:</h3>
+                <h3 className="fontHead">Popularity: </h3>
                 <p>{current.popularity}</p>
               </div>
             </div>

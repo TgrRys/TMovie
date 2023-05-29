@@ -18,9 +18,9 @@ const Header = ({
   query,
 }) => {
   return (
-    <Navbar bg="warning" expand="lg" variant="dark">
+    <Navbar bg="black" expand="lg" variant="dark">
       <Container fluid>
-        <Navbar.Brand href="/">TMovieDB APP</Navbar.Brand>
+        <Navbar.Brand href="/">TMovie</Navbar.Brand>
         <Navbar.Brand href="/" onClick={getPopular}>
           Popular
         </Navbar.Brand>
@@ -34,6 +34,21 @@ const Header = ({
             style={{ maxHeight: "100px" }}
             navbarScroll
           ></Nav>
+
+          <Form className="d-flex" onSubmit={searchMovie}>
+            <FormControl
+              type="search"
+              placeholder="Movie Name"
+              className="me-2"
+              aria-label="search"
+              name="query"
+              value={query}
+              onChange={changeHandler}
+            ></FormControl>
+            <Button variant="light" type="submit">
+              Search
+            </Button>
+          </Form>
         </NavbarCollapse>
       </Container>
     </Navbar>
